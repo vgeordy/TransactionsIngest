@@ -71,15 +71,20 @@ When Creating, Updating, Revoking, and finalizing, add that to AuditLog
 ## Build & Run
 
 ```
-1. dotnet tool install --global dotnet-ef
-2. dotnet ef database update
-3. dotnet run
+1. clone this repo
+2. cd TransactionsIngest
+3. dotnet tool install --global dotnet-ef
+4. cd TransactionsIngest.App
+5. dotnet restore
+6. dotnet ef database update
+7. dotnet run
 ```
 
 ## Run Tests
 
 ```
-dotnet test
+1. cd TransactionsIngest.Tests
+2. dotnet test
 ```
 
 ## Configuration
@@ -94,4 +99,5 @@ dotnet test
     "DefaultConnection": "Data Source=transactions.db"
   }
 }
+
 ```
